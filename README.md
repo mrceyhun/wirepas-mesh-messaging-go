@@ -1,0 +1,1 @@
+protoc -I backend-apis/gateway_to_backend/protocol_buffers_files/ --go_out=./src/go/ --go_opt=paths=source_relative --go-grpc_out=./src/go/ --go-grpc_opt=paths=source_relative backend-apis/gateway_to_backend/protocol_buffers_files/*.proto
